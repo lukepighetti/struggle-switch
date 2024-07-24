@@ -22,7 +22,7 @@ class _StruggleSwitchAppState extends State<StruggleSwitchApp> {
   var struggling = true;
 
   void handleNotStruggling(_) {
-    setState(() => struggling = false);
+    setState(() => struggling = !struggling);
   }
 
   void handleStartOver() {

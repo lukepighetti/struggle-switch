@@ -54,6 +54,14 @@ class _StruggleSwitchAppState extends State<StruggleSwitchApp> {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
+      darkTheme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.green,
+          brightness: Brightness.dark,
+          background: Colors.grey.shade900, // deprecated in favor of surface
+          surface: Colors.grey.shade900, // supercedes background, not working
+        ),
+      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Column(

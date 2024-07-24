@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
+import 'package:ssw/analytics.dart';
 import 'package:ssw/assets.dart';
 import 'package:ssw/extensions.dart';
 import 'package:ssw/widgets.dart';
@@ -23,28 +24,27 @@ class _StruggleSwitchAppState extends State<StruggleSwitchApp> {
 
   void handleNotStruggling(_) {
     setState(() => struggling = false);
+    Analytics.tapNotStruggling();
   }
 
   void handleStartOver() {
     setState(() => struggling = true);
+    Analytics.tapStartOver();
   }
 
   void handleWatchVideo() {
-    launchUrlString(
-      'https://www.youtube.com/watch?v=rCp1l16GCXI&pp=ygUPc3RydWdnbGUgc3dpdGNo',
-    );
+    launchUrlString('https://www.youtube.com/watch?v=rCp1l16GCXI');
+    Analytics.tapWatchVideo();
   }
 
   void handleViewCreator() {
-    launchUrlString(
-      'https://twitter.com/luke_pighetti',
-    );
+    launchUrlString('https://twitter.com/luke_pighetti');
+    Analytics.tapViewCreator();
   }
 
   void handleViewRepository() {
-    launchUrlString(
-      'https://github.com/lukepighetti/struggle-switch',
-    );
+    launchUrlString('https://github.com/lukepighetti/struggle-switch');
+    Analytics.tapViewRepository();
   }
 
   @override

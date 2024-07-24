@@ -1,11 +1,11 @@
 {
-    "name": "ssw",
-    "short_name": "ssw",
+    "name": "Struggle Switch",
+    "short_name": "SSW",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Manage intrusive thoughts by turning off your struggle switch",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

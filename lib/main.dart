@@ -41,6 +41,12 @@ class _StruggleSwitchAppState extends State<StruggleSwitchApp> {
     );
   }
 
+  void handleViewRepository() {
+    launchUrlString(
+      'https://github.com/lukepighetti/struggle-switch',
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -71,12 +77,9 @@ class _StruggleSwitchAppState extends State<StruggleSwitchApp> {
                     "Your Struggle Switch",
                     style: context.textHeadline,
                   ),
-                  const AnimatedVisibility(
-                    visible: false,
-                    child: IconButton(
-                      icon: SizedBox(),
-                      onPressed: null,
-                    ),
+                  IconButton(
+                    icon: const Icon(PhosphorIconsRegular.githubLogo),
+                    onPressed: handleViewRepository,
                   ),
                 ],
               ),

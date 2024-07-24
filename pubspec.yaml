@@ -13,8 +13,10 @@ dependencies:
   cupertino_icons: ^1.0.6
   google_fonts: ^6.2.1
   phosphor_flutter: ^2.1.0
-  posthog_flutter: ^4.5.0
   url_launcher: ^6.3.0
+  http: ^1.2.2
+  shared_preferences: ^2.2.3
+  nanoid2: ^2.0.1
 
 dev_dependencies:
   flutter_test:

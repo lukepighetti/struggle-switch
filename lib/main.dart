@@ -48,6 +48,12 @@ class _StruggleSwitchAppState extends State<StruggleSwitchApp> {
   }
 
   @override
+  void initState() {
+    Analytics.openApp();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Struggle Switch',
